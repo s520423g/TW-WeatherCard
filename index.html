@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/weather-1.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="text-area animate__animated animate__bounceInLeft">
+            <h2>Weather Forecast</h2>
+            <div class="time"></div>
+        </div>
+        <!-- 也可以用程式去生出按鈕(參考卡片) -->
+        <div class="btn-area">
+            <button type="button" class="all-city animate__animated animate__rubberBand hide">全部</button>
+            <button type="button" class="north-city animate__animated animate__rubberBand hide">北部</button>
+            <button type="button" class="mid-city animate__animated animate__rubberBand hide">中部</button>
+            <button type="button" class="south-city animate__animated animate__rubberBand hide">南部</button>
+            <button type="button" class="east-city animate__animated animate__rubberBand hide">東部</button>
+            <button type="button" class="out-city animate__animated animate__rubberBand hide">離島</button>
+            <input type="checkbox" id="ham-btn-switch">
+            <label for="ham-btn-switch" class="ham-btn">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </label>
+            <div class="menu">
+                <button type="button" class="all-city ">全部</button>
+                <button type="button" class="north-city">北部</button>
+                <button type="button" class="mid-city">中部</button>
+                <button type="button" class="south-city">南部</button>
+                <button type="button" class="east-city">東部</button>
+                <button type="button" class="out-city">離島</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-region">
+        <div class="card"></div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./json/weather-1.js"></script>
+</body>
+
+</html>
